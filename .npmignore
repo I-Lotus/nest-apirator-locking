@@ -1,0 +1,15 @@
+.idea/
+.vscode/
+.DS_Store
+node_modules/
+package-lock.json
+tsconfig.json
+test/
+src/
+samples/
+*.test.ts
+*.test.js
+docker-compose.yml
+redis-data/
+nest-cli.json
+tsconfig.build.json

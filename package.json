@@ -1,0 +1,76 @@
+{
+  "name": "nest-apirator-locking",
+  "version": "3.0.0",
+  "description": "A NestJS module that provides distributed locking capabilities using Redis and @apiratorjs/locking utilities. It offers implementations for distributed mutexes and semaphores to help synchronize concurrent operations across distributed systems.",
+  "author": {
+    "name": "Oleksii Zaitsev",
+    "url": "https://oleksiizaitsev.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/I-Lotus/nest-apirator-locking-redis.git"
+  },
+  "keywords": [
+    "nestjs",
+    "locking",
+    "distributed-locking",
+    "redis",
+    "mutex",
+    "semaphore"
+  ],
+  "scripts": {
+    "build": "nest build",
+    "test:watch": "jest --watch --config ./test/jest-e2e.json",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test": "jest --config ./test/jest-e2e.json",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "dependencies": {
+    "@apiratorjs/locking": "^3.0.2"
+  },
+  "devDependencies": {
+    "@apiratorjs/locking-redis": "^1.0.4",
+    "@nestjs/cli": "^11.0.0",
+    "@nestjs/common": "^11.0.1",
+    "@nestjs/core": "^11.0.1",
+    "@nestjs/platform-express": "^11.0.1",
+    "@nestjs/schematics": "^11.0.0",
+    "@nestjs/testing": "^11.0.1",
+    "@swc/cli": "^0.6.0",
+    "@swc/core": "^1.10.7",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.7",
+    "@types/supertest": "^6.0.2",
+    "globals": "^16.0.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.4.2",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "source-map-support": "^0.5.21",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-loader": "^9.5.2",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
