@@ -1,4 +1,4 @@
-# NestJS Locking Redis
+# NestJS Locking
 
 [![NPM version](https://img.shields.io/npm/v/nest-apirator-locking.svg)](https://www.npmjs.com/package/nest-apirator-locking)
 [![License: MIT](https://img.shields.io/npm/l/nest-apirator-locking.svg)](https://github.com/I-Lotus/nest-apirator-locking/blob/main/LICENSE)
