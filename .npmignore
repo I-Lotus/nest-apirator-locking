@@ -13,3 +13,4 @@ docker-compose.yml
 redis-data/
 nest-cli.json
 tsconfig.build.json
+.npmrc

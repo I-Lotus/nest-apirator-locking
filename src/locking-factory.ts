@@ -1,22 +1,13 @@
 import { Inject, Injectable, OnModuleInit, Optional } from "@nestjs/common";
-import {
-  DistributedMutex,
-  DistributedSemaphore,
-  Mutex,
-  Semaphore,
-  types,
-} from "@apiratorjs/locking";
-import {
-  ILockingFactoryImpl,
-  LockingFactoryImplToken,
-} from "./locking-factory-interface";
+import { DistributedMutex, DistributedSemaphore, Mutex, Semaphore, types } from "@apiratorjs/locking";
+import { ILockingFactoryImpl, LockingFactoryImplToken } from "./locking-factory-interface";
 
 @Injectable()
 export class LockingFactory implements OnModuleInit {
   public constructor(
     @Optional()
     @Inject(LockingFactoryImplToken)
-    private readonly _lockingFactoryImpl?: ILockingFactoryImpl,
+    private readonly _lockingFactoryImpl?: ILockingFactoryImpl
   ) {}
 
   async onModuleInit() {
@@ -37,13 +28,13 @@ export class LockingFactory implements OnModuleInit {
   }
 
   public createDistributedMutex(
-    props: types.DistributedMutexConstructorProps,
+    props: types.DistributedMutexConstructorProps
   ): DistributedMutex {
     return new DistributedMutex(props);
   }
 
   public createDistributedSemaphore(
-    props: types.DistributedSemaphoreConstructorProps,
+    props: types.DistributedSemaphoreConstructorProps
   ): DistributedSemaphore {
     return new DistributedSemaphore(props);
   }
