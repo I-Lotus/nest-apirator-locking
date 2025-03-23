@@ -1,6 +1,6 @@
 {
   "name": "nest-apirator-locking",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A NestJS module that provides distributed locking capabilities using @apiratorjs/locking utilities. It offers implementations for distributed mutexes and semaphores to help synchronize concurrent operations across distributed systems.",
   "author": {
     "name": "Oleksii Zaitsev",

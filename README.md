@@ -3,8 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/nest-apirator-locking.svg)](https://www.npmjs.com/package/nest-apirator-locking)
 [![License: MIT](https://img.shields.io/npm/l/nest-apirator-locking.svg)](https://github.com/I-Lotus/nest-apirator-locking/blob/main/LICENSE)
 
-A NestJS module that provides distributed locking capabilities using Redis and
-the [@apiratorjs/locking](https://github.com/apiratorjs/locking) libraries. This module offers robust implementations
+A NestJS module that provides distributed locking capabilities of [@apiratorjs/locking](https://github.com/apiratorjs/locking) libraries. This module offers robust implementations
 for distributed mutexes and semaphores, enabling synchronized access to critical sections in distributed systems.
 
 > **Note:** Requires Node.js version **>=16.4.0**
